@@ -47,7 +47,7 @@ export class SampleCommandContribution implements CommandContribution {
 export class SampleMenuContribution implements MenuContribution {
     registerMenus(menus: MenuModelRegistry): void {
         const subMenuPath = [...MAIN_MENU_BAR, 'sample-menu'];
-        menus.registerSubmenu(subMenuPath, 'Sample Menu', {
+        menus.registerSubmenu(subMenuPath, 'Sample', {
             order: '2' // that should put the menu right next to the File menu
         });
         menus.registerMenuAction(subMenuPath, {
@@ -59,7 +59,7 @@ export class SampleMenuContribution implements MenuContribution {
             order: '2'
         });
         const subSubMenuPath = [...subMenuPath, 'sample-sub-menu'];
-        menus.registerSubmenu(subSubMenuPath, 'Sample sub menu', { order: '2' });
+        menus.registerSubmenu(subSubMenuPath, 'Sample sub', { order: '2' });
         menus.registerMenuAction(subSubMenuPath, {
             commandId: SampleCommand.id,
             order: '1'
