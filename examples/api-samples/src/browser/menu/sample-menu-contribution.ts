@@ -47,7 +47,7 @@ export class SampleCommandContribution implements CommandContribution {
 export class SampleMenuContribution implements MenuContribution {
     registerMenus(menus: MenuModelRegistry): void {
         const subMenuPath = [...MAIN_MENU_BAR, 'sample-menu'];
-        menus.registerSubmenu(subMenuPath, 'Sample Menu', {
+        menus.registerSubmenu(subMenuPath, ' changed this', {
             order: '2' // that should put the menu right next to the File menu
         });
         menus.registerMenuAction(subMenuPath, {
