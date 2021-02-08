@@ -31,7 +31,7 @@ export class SampleCommandContribution implements CommandContribution {
     registerCommands(commands: CommandRegistry): void {
         commands.registerCommand(SampleCommand, {
             execute: () => {
-                alert('This is a sample command!');
+                alert('This is ');
             }
         });
         commands.registerCommand(SampleCommand2, {
